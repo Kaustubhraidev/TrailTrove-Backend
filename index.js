@@ -45,6 +45,13 @@ app.use("/api/auth", authRoutes)
 app.use("/api/user", userRoutes)
 app.use("/api/travel-story", travelStoryRoutes)
 
+app.get('/',(req, res) => {
+  res.send({
+    activeStatus: true,
+    error: false,
+  })
+})
+
 // server static files from the uploads and assets directory
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
