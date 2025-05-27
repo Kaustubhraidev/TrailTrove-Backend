@@ -26,7 +26,7 @@ const app = express()
 // Enable CORS for frontend (Replace with your frontend URL)
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://lovely-ganache-12da0a.netlify.app/login"]
+    origin: ["http://localhost:5173", "https://lovely-ganache-12da0a.netlify.app/login", "https://trail-trove-frontend.vercel.app/login"]
     methods: ["GET", "POST", "PUT", "DELETE"], // Allow CRUD operations
     credentials: true, // Allow cookies & authorization headers
   })
